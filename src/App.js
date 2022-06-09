@@ -1,4 +1,5 @@
 import React from 'react';
+import Badge from 'react-bootstrap/Badge';
 
 export default class App extends React.Component {
   render() {
