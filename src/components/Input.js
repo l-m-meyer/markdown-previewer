@@ -1,5 +1,5 @@
 import Badge from 'react-bootstrap/Badge';
-import ResetButton from './components/ResetButton';
+import ResetButton from './ResetButton';
 
 export default function Input({ setMarkdown, markdown }) {
 
