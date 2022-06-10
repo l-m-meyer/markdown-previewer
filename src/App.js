@@ -9,6 +9,10 @@ export default class App extends React.Component {
     };
   }
 
+  updateMarkdown(markdown) {
+    this.setState({ markdown });
+  }
+
   render() {
     const inputStyle = {
       width: '400px',
