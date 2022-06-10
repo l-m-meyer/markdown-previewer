@@ -11,6 +11,15 @@ export default class App extends React.Component {
       padding: '10px'
     }
 
+    const outputStyle = {
+      width: '400px',
+      height: '50vh',
+      backgroundColor: '#DCDCDC',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      padding: '10px'
+    }
+
     return (
       <div className="App">
         <div className="container">
@@ -31,8 +40,14 @@ export default class App extends React.Component {
                     Markdown Input
                   </Badge>
                 </h4>
-                <div className='mark-input'>
-                  <textarea className='input' />
+                <div
+                  className='mark-input'
+                  style={inputStyle}
+                >
+                  <textarea
+                    className='input'
+                    style={inputStyle}
+                  />
                 </div>
               </div>
             </div>
@@ -43,8 +58,7 @@ export default class App extends React.Component {
                     Preview
                   </Badge>
                 </h4>
-                <div className='mark-output'>
-                  <textarea className='output' />
+                <div style={outputStyle}>
                 </div>
               </div>
             </div>
