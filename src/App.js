@@ -1,5 +1,6 @@
 import React from 'react';
 import Badge from 'react-bootstrap/Badge';
+import { marked } from 'marked';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -37,6 +38,7 @@ export default class App extends React.Component {
           <div className="row mt-4">
             <div className="col text-center">
               <h1>
+                {' '}
                 <Badge className="text-align-center" variant="light">
                   Markdown Previewer
                 </Badge>
@@ -45,6 +47,7 @@ export default class App extends React.Component {
           </div>
           <div className="row mt-4">
             <div className="col md-6">
+              {' '}
               <div className="col text-center">
                 <h4>
                   <Badge className="text-align-center" variant="secondary">
@@ -62,19 +65,27 @@ export default class App extends React.Component {
                     onChange={(e) => {
                       this.updateMarkdown(e.target.value);
                     }}
-                  />
+                  >
+                    {' '}
+                    {console.log(this.state.markdown)}
+                  </textarea>
                 </div>
               </div>
             </div>
             <div className="col md-6">
+              {' '}
               <div className="col text-center">
                 <h4>
                   <Badge className="text-align-center" variant="secondary">
                     Preview
                   </Badge>
                 </h4>
-                <div style={outputStyle}>
-                </div>
+                <div
+                  style={outputStyle}
+                  dangerouslySetInnerHTML={{
+                    __html: marked(this.state.markdown)
+                  }}
+                ></div>
               </div>
             </div>
           </div>
