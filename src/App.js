@@ -3,6 +3,14 @@ import Badge from 'react-bootstrap/Badge';
 
 export default class App extends React.Component {
   render() {
+    const inputStyle = {
+      width: '400px',
+      height: '50vh',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      padding: '10px'
+    }
+
     return (
       <div className="App">
         <div className="container">
