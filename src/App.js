@@ -1,6 +1,7 @@
 import React from 'react';
 import Badge from 'react-bootstrap/Badge';
 import { marked } from 'marked';
+import Title from './components/Title';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -35,7 +36,7 @@ export default class App extends React.Component {
     return (
       <div className="App">
         <div className="container">
-          <div className="row mt-4">
+          {/* <div className="row mt-4">
             <div className="col text-center">
               <h1>
                 {' '}
@@ -44,7 +45,8 @@ export default class App extends React.Component {
                 </Badge>
               </h1>
             </div>
-          </div>
+          </div> */}
+          <Title />
           <div className="row mt-4">
             <div className="col md-6">
               {' '}
