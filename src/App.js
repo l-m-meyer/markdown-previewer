@@ -15,6 +15,26 @@ export default class App extends React.Component {
               </h1>
             </div>
           </div>
+          <div className="row mt-4">
+            <div className="col md-6">
+              <div className="col text-center">
+                <h4>
+                  <Badge className="text-align-center" variant="secondary">
+                    Markdown Input
+                  </Badge>
+                </h4>
+              </div>
+            </div>
+            <div className="col md-6">
+              <div className="col text-center">
+                <h4>
+                  <Badge className="text-align-center" variant="secondary">
+                    Preview
+                  </Badge>
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )
