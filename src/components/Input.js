@@ -1,4 +1,5 @@
 import Badge from 'react-bootstrap/Badge';
+import ResetButton from './components/ResetButton';
 
 export default function Input({ setMarkdown, markdown }) {
 
@@ -14,10 +15,13 @@ export default function Input({ setMarkdown, markdown }) {
       {' '}
       <div className="col text-center">
         <h4>
-          <Badge className="text-align-center" variant="secondary">
+          <Badge
+            className="text-align-center" variant="secondary"
+          >
             Markdown Input
           </Badge>
         </h4>
+        <ResetButton setMarkdown={setMarkdown} />
         <div
           className='mark-input'
           style={inputStyle}
