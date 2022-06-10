@@ -6,7 +6,7 @@ Built by Lisa Meyer
 
 ## Enhancements to Make
 
-- Modularize code into components
+- ~~Modularize code into components~~
 - Add reset button
 - Responsive containers for input and output
 - Fix height of input and output containers to allow for scroll.
