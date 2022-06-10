@@ -58,6 +58,10 @@ export default class App extends React.Component {
                   <textarea
                     className='input'
                     style={inputStyle}
+                    value={this.state.markdown}
+                    onChange={(e) => {
+                      this.updateMarkdown(e.target.value);
+                    }}
                   />
                 </div>
               </div>
