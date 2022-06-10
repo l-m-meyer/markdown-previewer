@@ -23,6 +23,9 @@ export default class App extends React.Component {
                     Markdown Input
                   </Badge>
                 </h4>
+                <div className='mark-input'>
+                  <textarea className='input' />
+                </div>
               </div>
             </div>
             <div className="col md-6">
@@ -32,6 +35,9 @@ export default class App extends React.Component {
                     Preview
                   </Badge>
                 </h4>
+                <div className='mark-output'>
+                  <textarea className='output' />
+                </div>
               </div>
             </div>
           </div>
