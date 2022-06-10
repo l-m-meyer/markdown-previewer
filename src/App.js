@@ -2,6 +2,13 @@ import React from 'react';
 import Badge from 'react-bootstrap/Badge';
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      markdown: '',
+    };
+  }
+
   render() {
     const inputStyle = {
       width: '400px',
