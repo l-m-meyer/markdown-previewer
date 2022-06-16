@@ -8,8 +8,12 @@ export default function Input({ setMarkdown, markdown }) {
     height: '50vh',
     marginLeft: 'auto',
     marginRight: 'auto',
-    padding: '10px'
+    marginTop: '10px',
+    padding: '10px',
+    borderRadius: '5px',
+    backgroundColor: 'rgba(255, 255, 255, .50)',
   }
+
   return (
     <div className="col md-6">
       {' '}
@@ -24,7 +28,7 @@ export default function Input({ setMarkdown, markdown }) {
         <ResetButton setMarkdown={setMarkdown} />
         <div
           className='mark-input'
-          style={inputStyle}
+        // style={inputStyle}
         >
           <textarea
             className='input'

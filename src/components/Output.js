@@ -9,7 +9,9 @@ export default function Output({ markdown }) {
     backgroundColor: '#DCDCDC',
     marginLeft: 'auto',
     marginRight: 'auto',
-    padding: '10px'
+    marginTop: '55px',
+    padding: '10px',
+    borderRadius: '5px',
   }
 
   return (
